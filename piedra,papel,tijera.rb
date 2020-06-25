@@ -15,7 +15,6 @@ while !jugador1_valid
     puts 'Ingrese una opción'
     opcion_jugador1 = gets.chomp
     if opcion_jugador1 == '1' || opcion_jugador1 == '2' || opcion_jugador1 == '3' || opcion_jugador1 == '4'
-        #print "Opción invalida"
         print "\n"
         jugador1_valid = true
         break if opcion_jugador1 == '4'
