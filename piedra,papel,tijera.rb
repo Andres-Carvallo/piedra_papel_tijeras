@@ -1,4 +1,4 @@
-opcion_jugador1 = '0' #igual se debe ingresar la variable previo al while
+opcion_jugador1 = '0' 
 opcion_jugador2 = '0'
 
 jugador1_valid = false
