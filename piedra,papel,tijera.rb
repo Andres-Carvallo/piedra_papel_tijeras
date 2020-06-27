@@ -41,26 +41,18 @@ while !jugador2_valid && opcion_jugador1 != '4'
 
     if opcion_jugador2 == '1' || opcion_jugador2 == '2' || opcion_jugador2 == '3' || opcion_jugador2 == '4'
         jugador2_valid = true         
-        if opcion_jugador1 == '1' && opcion_jugador2 == '1'
+        if (opcion_jugador1 == '1' && opcion_jugador2 == '1') || (opcion_jugador1 == '2' && opcion_jugador2 == '2') || (opcion_jugador1 == '3' && opcion_jugador2 == '3')
             puts 'empate'
-        elsif  opcion_jugador1 == '2' && opcion_jugador2 == '2'
-            puts 'empate'
-        elsif opcion_jugador1 == '3' && opcion_jugador2 == '3'
-            puts 'empate'
-        elsif opcion_jugador1 == '1' && opcion_jugador2 == '3'
+        elsif (opcion_jugador1 == '1' && opcion_jugador2 == '3') || (opcion_jugador2 == '1' && opcion_jugador1 == '3')
             puts 'Piedra gana a tijeras'
-        elsif opcion_jugador1 == '2' &&  opcion_jugador2 == '1'
+        elsif (opcion_jugador1 == '2' &&  opcion_jugador2 == '1') || (opcion_jugador2 == '2' &&  opcion_jugador1 == '1')
             puts 'Papel gana a piedra'
-        elsif opcion_jugador1 == '3' && opcion_jugador2 == '2'
+        elsif (opcion_jugador1 == '3' && opcion_jugador2 == '2') || (opcion_jugador2 == '3' && opcion_jugador1 == '2')
             puts 'Tijera gana a papel'
         elsif opcion_jugador1 == '4' || opcion_jugador2 == '4'
             puts 'Saliendo..'
-        elsif opcion_jugador2 == '1' && opcion_jugador1 == '3'
-            puts 'Piedra gana a tijeras'
-        elsif opcion_jugador2 == '2' &&  opcion_jugador1 == '1'
-            puts 'Papel gana a piedra'
-        elsif opcion_jugador2 == '3' && opcion_jugador1 == '2'
-            puts 'Tijera gana a papel' 
+        else 
+            puts "\n" 
         end
     else 
         puts 'Opción inválida'
